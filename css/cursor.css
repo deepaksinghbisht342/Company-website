@@ -1,0 +1,27 @@
+.cursor {
+    width: 25px;
+    height: 25px;
+    background-color: #D72B33;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+    z-index: 99999999;
+
+  }
+  
+  .cursor::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border: 8px solid #9a9999;
+    border-radius: 50%;
+    opacity: .5;
+    animation: cursorAnim2 1s infinite alternate;
+    line-height: 60px;
+    top: -70%;
+    left:-70%;
+  }
